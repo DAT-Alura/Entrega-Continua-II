@@ -113,3 +113,26 @@
 > Alternativa correta! É preciso saber qual métrica que estamos avaliando e aonde queremos chegar.
 - Deve rodar em ambiente mais leve do que o de produção
 - Deve ser executado pelos desenvolvedores
+
+## Aula 6
+
+1 - Quais atributos arquiteturais do software influenciam a entrega contínua?
+- Usabilidade
+- __Testabilidade__
+> Alternativa correta! Todo pipeline é relacionado com testes e o feedback deles. Um software que é difícil de testar, ou não possui testes, já não atende a integração contínua, menos ainda a entrega contínua.
+- __Deployabilidade__
+> Alternativa correta! Esse atributo define a facilidade de implantar o software. Microsserviços, por exemplo, possuem vantagens aqui.
+- Escalabilidade
+
+2 - Por que separar o deploy do release?
+- Para fazer A/B testing
+- __Para diminuir o risco da entrega__
+> Alternativa correta! São duas etapas diferentes que podem dar errado.
+- __Para separar a decisão técnica (deploy) da decisão de negócio (release)__
+> Alternativa correta! Podemos testar o deploy sempre, mas quando o negócio definir a publicação.
+
+3 - Qual é a diferença entre Blue-Green Deploy e Canary Release?
+- O Blue-Green sempre usa Feature Toggles, e o Canary não.
+- No Blue-Green, apenas uma parte dos usuários usa o ambiente novo. No Canary todos os usuários usam o ambiente novo.
+- __No Canary, apenas uma parte dos usuários usa o novo ambiente. No Blue-Green todos os usuários usam o ambiente novo.__
+> Alternativa correta! No Canary Release, apenas uma parte dos usuários são direcionados para o novo ambiente. No Blue-Green todos os usuários vão ser direcionados para o ambiente novo.

@@ -1,0 +1,7 @@
+# Para saber mais
+
+## The Twelve-Factor App
+
+The Twelve-Factor App é um site (ou metodologia) que define 12 boas práticas para construir software na era de nuvem. Muitas das boas práticas discutidas no curso aparecem no Twelve-Factor, assim como gerenciamento de configuração, portabilidade entre ambientes ou implantação contínua. Vale conferir!
+
+[The Twelve-Factor App](https://12factor.net/pt_br/)
