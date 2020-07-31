@@ -96,3 +96,20 @@
 - Precisa de aprovação humana, normalmente alguém da equipe QA.
 - __Nessa etapa é testado o sistema todo.__
 > Alternativa correta! São testes baseados em requisitos, de alto nível (black box tests) e por isso muito valiosos.
+
+## Aula 5
+
+1 - Qual é o objetivo do ambiente de homologação?
+- Executar testes de integração
+- __Testar o deploy no ambiente igual ao de produção__
+> Alternativa correta! Como o ambiente de homologação é igual (ou muito parecido) com o de produção, temos mais garantias que o deploy vai funcionar.
+- __Dar feedback para a equipe sobre a aceitação e usabilidade do software__
+> Alternativa correta! A equipe deve participar e aprender com o usuário.
+- __Validar se o software atende as expectativas__
+> Alternativa correta! Idealmente, o usuário final testa e valida o software.
+
+2 - Qual boa prática identificamos quando abordamos os testes de carga?
+- __Deve ter uma meta clara__
+> Alternativa correta! É preciso saber qual métrica que estamos avaliando e aonde queremos chegar.
+- Deve rodar em ambiente mais leve do que o de produção
+- Deve ser executado pelos desenvolvedores
