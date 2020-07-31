@@ -68,3 +68,31 @@
 > Alternativa correta! O importante é que os testes rápidos fique à esquerda, e que cada ambiente à direita se aproxime do ambiente de produção.
 - Unit Test --> Homologação --> Aceitação Automatizada --> Produção
 - Aceitação Automatizada --> Unit Test --> Homologação --> Produção
+
+## Aula 4
+
+1 - O que é executado no Commit Stage?
+- __Testes unitários__
+> Alternativa correta! Logo após o build, devemos executar os testes de unidade, pois são os mais rápidos (feedback!).
+- __Análise de qualidade de código__
+> Alternativa correta! Os relatórios de qualidade são gerados nessa etapa. Podem ser executados em paralelo aos testes de unidade.
+- Teste de integração 
+- __Build__
+> Alternativa correta! O primeiro passo é buildar a aplicação.
+
+2 - Assumindo que o build e os testes passaram, qual é o resultado do commit stage?
+- __Plano de teste__
+> Alternativa correta! Um plano de teste é relacionado com a equipe de Quality Assurance (QA) e não é um resultado do pipeline.
+- __Relatórios de qualidade__
+> Alternativa correta! O pipeline (servidor de construção) deve publicar os relatórios da análise de código junto com os testes de unidade.
+- Pipeline como script
+- __Um artefato de build__
+> Alternativa correta! Isso pode ser um JAR, DLL, imagem Docker, GEM ou ZIP, dependendo da sua plataforma.
+
+3 - O que é verdade sobre o stage de testes de aceitação automatizada?
+- __Essa etapa é iniciado quando o commit stage foi executado com sucesso.__
+> Alternativa correta! Quando executamos a primeira etapa com sucesso, automaticamente é chamado a etapa dos testes de aceitação automatizados.
+- O ambiente pode ser totalmente diferente do ambiente de produção.
+- Precisa de aprovação humana, normalmente alguém da equipe QA.
+- __Nessa etapa é testado o sistema todo.__
+> Alternativa correta! São testes baseados em requisitos, de alto nível (black box tests) e por isso muito valiosos.
