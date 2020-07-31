@@ -34,3 +34,37 @@
 > Alternativa correta! Todos os envolvidos, do analista e desenvolvedor até o DBA e operações, todos devem fazer parte da equipe de entrega, o delivery time.
 - A responsabilidade está com o líder técnico da equipe
 - O desenvolvedor que fez a alteração no código
+
+## Aula 3
+
+1 - Quais são as vantagens de usar deployment pipeline?
+- Entrega otimizada através de ferramentas típicas do mundo DevOps
+- Entrega versionada
+- __Entrega confiável__
+> Alternativa correta! As etapas são testes do nosso sistema, começando com testes simples e rápidos, até chegar aos testes mais sofisticado.
+- __Feedback rápido__
+> Alternativa correta! Cada etapa dá feedback para a equipe sobre a qualidade do software.
+
+2 - Em que momento o pipeline começa a trabalhar?
+- __A cada commit__
+> Alternativa correta! Para cada commit novo devemos construir e testar o software!
+- Só quando um desenvolvedor notifica o pipeline
+- Normalmente à noite, quando poucos desenvolvedores estão ativos
+- Normalmente a cada hora
+
+3 - Os ambientes da pipeline devem ser:
+- Reaproveitados
+> 
+- Containerizados
+> 
+- __Temporários__
+> Alternativa correta! Idealmente, criamos todo o ambiente do zero, para não levar nenhuma "sujeira" de instalações e testes anteriores.
+- __Iguais ou semelhantes ao ambiente de produção__
+> Alternativa correta! Quanto mais semelhante o ambiente, mais garantias temos que o deploy vai funcionar e os testes vão dar feedback real.
+
+4 - Qual é a ordem aconselhada das etapas de um pipeline de implantação?
+- Unit Test --> Aceitação Automatizada --> Produção --> Homologação
+- __Unit Test --> Aceitação Automatizada --> Homologação --> Produção__
+> Alternativa correta! O importante é que os testes rápidos fique à esquerda, e que cada ambiente à direita se aproxime do ambiente de produção.
+- Unit Test --> Homologação --> Aceitação Automatizada --> Produção
+- Aceitação Automatizada --> Unit Test --> Homologação --> Produção
